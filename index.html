@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/foundation.css">
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
 </head>
 <body>
 
-<!--OFF CANVAS MENU    -->
+<!--OFF CANVAS MENU    
 
-<div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
+<div class="off-canvas-wrapper" data-offcanvas>
+    <div class="off-canvas-wrapper-inner">
         <nav class="tab-bar">
             <section class="left-small">
                 <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -51,13 +52,62 @@
         </aside>
 
         <section class="main-section">
-            <!-- content goes here -->
+           
         </section>
 
         <a class="exit-off-canvas"></a>
 
     </div>
 </div>
+-->
+
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+        <ul class="vertical menu" data-drilldown><!-- start of the drilldown multi level menu -->
+          <li>
+            <a>Item 1</a>
+            <ul class="vertical menu">
+              <li><a href="#">Item 1A</a></li>
+              <li><a href="#">Item 1B</a></li>
+              <li><a href="#">Item 1C</a></li>
+              <li><a href="#">Item 1D</a></li>
+              <li><a href="#">Item 1E</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>Item 2</a>
+            <ul class="vertical menu">
+              <li><a href="#">Item 2A</a></li>
+              <li><a href="#">Item 2B</a></li>
+              <li><a href="#">Item 2C</a></li>
+              <li><a href="#">Item 2D</a></li>
+              <li><a href="#">Item 2E</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>Item 3</a>
+            <ul class="vertical menu">
+              <li><a href="#">Item 3A</a></li>
+              <li><a href="#">Item 3B</a></li>
+              <li><a href="#">Item 3C</a></li>
+              <li><a href="#">Item 3D</a></li>
+              <li><a href="#">Item 3E</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Item 4</a></li>
+        </ul>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+            <span class="title-bar-title">Foundation</span>
+          </div>
+          <div class="title-bar-right">
+            <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+          </div>
+        </div>
 
 
     <!--CWICZENIA-->
@@ -139,7 +189,10 @@
             </blockquote>
         </div>
     </div>
-
+        
+      </div>
+    </div>
+  </div>
 <!-- include before </body> tag -->
 <script src="js/foundation.min.js"></script>
 <script>
